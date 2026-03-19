@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-bg {
+    background:
+        linear-gradient(rgba(78, 59, 49, 0.28), rgba(78, 59, 49, 0.28)),
+        url('../img/hero.jpeg') center/cover no-repeat;
+}
+
+#mobileMenu.show {
+    display: block;
+}
