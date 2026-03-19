@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>floreriaPiura | Ramos y arreglos florales</title>
+    <meta name="description"
+        content="Catálogo de ramos y arreglos florales de floreriaPiura. Pedidos por WhatsApp en Piura." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crema: '#F5EEE6',
+                        arena: '#E7D8C9',
+                        beige: '#D7C0AE',
+                        moka: '#8B6F5A',
+                        cacao: '#4E3B31',
+                        rosa: '#D8A7B1',
+                        rosaClaro: '#F3DCE2'
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(78, 59, 49, 0.10)'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-crema text-cacao">
+
+    <header class="sticky top-0 z-50 bg-crema/95 backdrop-blur border-b border-arena">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <a href="#inicio" class="text-2xl font-bold tracking-wide text-cacao">
+                    floreria<span class="text-moka">Piura</span>
+                </a>
+
+                <button id="menuButton"
+                    class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full border border-arena"
+                    aria-label="Abrir menú" type="button">
+                    ☰
+                </button>
+
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#inicio" class="hover:text-moka transition">Inicio</a>
+                    <a href="#catalogo" class="hover:text-moka transition">Catálogo</a>
+                    <a href="#destacados" class="hover:text-moka transition">Destacados</a>
+                    <a href="#nosotros" class="hover:text-moka transition">Nosotros</a>
+                    <a href="#contacto" class="hover:text-moka transition">Contacto</a>
+                </nav>
+
+                <a href="https://wa.me/51915942702?text=Hola%20floreriaPiura%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20ramos"
+                    target="_blank" rel="noopener noreferrer"
+                    class="hidden sm:inline-flex bg-cacao text-white px-5 py-3 rounded-full text-sm font-semibold hover:bg-moka transition">
+                    Pedir por WhatsApp
+                </a>
+            </div>
+
+            <nav id="mobileMenu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col gap-3 text-sm font-medium">
+                    <a href="#inicio" class="hover:text-moka transition">Inicio</a>
+                    <a href="#catalogo" class="hover:text-moka transition">Catálogo</a>
+                    <a href="#destacados" class="hover:text-moka transition">Destacados</a>
+                    <a href="#nosotros" class="hover:text-moka transition">Nosotros</a>
+                    <a href="#contacto" class="hover:text-moka transition">Contacto</a>
+                    <a href="https://wa.me/51915942702?text=Hola%20floreriaPiura%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20ramos"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex justify-center bg-cacao text-white px-5 py-3 rounded-full text-sm font-semibold hover:bg-moka transition mt-2">
+                        Pedir por WhatsApp
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-bg min-h-[82vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl text-white py-20">
+                <p class="uppercase tracking-[0.25em] text-sm mb-4 text-rosaClaro">
+                    Ramos y arreglos florales
+                </p>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Flores que transmiten amor, elegancia y momentos inolvidables
+                </h1>
+
+                <p class="text-base sm:text-lg text-white/90 mb-8 max-w-xl">
+                    Descubre nuestro catálogo de ramos coreanos, arreglos florales y detalles
+                    especiales con una estética cálida y elegante para sorprender en cualquier ocasión.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#catalogo"
+                        class="bg-white text-cacao px-6 py-3 rounded-full font-semibold text-center hover:bg-rosaClaro transition">
+                        Ver catálogo
+                    </a>
+
+                    <a href="https://wa.me/51915942702?text=Hola%20floreriaPiura%2C%20quiero%20hacer%20un%20pedido"
+                        target="_blank" rel="noopener noreferrer"
+                        class="border border-white text-white px-6 py-3 rounded-full font-semibold text-center hover:bg-white hover:text-cacao transition">
+                        Cotizar ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-14 border-y border-arena bg-[#f8f2eb]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-3xl p-6 shadow-soft">
+                    <h3 class="text-lg font-bold mb-2">Diseños elegantes</h3>
+                    <p class="text-sm text-cacao/80">
+                        Ramos inspirados en una línea visual cálida, delicada y moderna.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 shadow-soft">
+                    <h3 class="text-lg font-bold mb-2">Pedidos por WhatsApp</h3>
+                    <p class="text-sm text-cacao/80">
+                        Consulta disponibilidad, personalización y entrega directamente por chat.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 shadow-soft">
+                    <h3 class="text-lg font-bold mb-2">Atención en Piura</h3>
+                    <p class="text-sm text-cacao/80">
+                        Ideal para regalos de cumpleaños, aniversarios, sorpresas y fechas especiales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10">
+                <div>
+                    <p class="uppercase tracking-[0.2em] text-sm text-moka mb-3">Nuestro catálogo</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold">Ramos para cada ocasión</h2>
+                </div>
+
+                <p class="max-w-2xl text-cacao/75">
+                    Una selección visual inspirada en una estética floral cálida y elegante,
+                    adaptada para una página simple sin carrito ni login.
+                </p>
+            </div>
+
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+    </section>
+
+    <section id="destacados" class="py-20 bg-white border-y border-arena">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="uppercase tracking-[0.2em] text-sm text-moka mb-3">Colección destacada</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                        Ramos con estilo delicado y presentación premium
+                    </h2>
+                    <p class="text-cacao/80 mb-6">
+                        Creamos arreglos florales con una presentación envolvente, tonos suaves y una
+                        composición pensada para impactar visualmente desde el primer vistazo.
+                    </p>
+                    <ul class="space-y-3 text-cacao/85">
+                        <li>• Ramos coreanos y bouquet elegantes</li>
+                        <li>• Presentación personalizada</li>
+                        <li>• Opciones para cumpleaños y aniversarios</li>
+                        <li>• Atención rápida por WhatsApp</li>
+                    </ul>
+                </div>
+
+                <div class="bg-crema rounded-[2rem] p-5 shadow-soft">
+                    <img src="assets/img/producto-1.jpeg" alt="Ramo destacado de floreriaPiura"
+                        class="w-full h-[420px] object-cover rounded-[1.5rem]" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="assets/img/producto-2.jpeg" alt="Arreglo floral de floreriaPiura"
+                        class="w-full h-[460px] object-cover rounded-[2rem] shadow-soft" />
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <p class="uppercase tracking-[0.2em] text-sm text-moka mb-3">Sobre nosotros</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                        En floreriaPiura convertimos flores en detalles memorables
+                    </h2>
+                    <p class="text-cacao/80 mb-5">
+                        Nuestra propuesta combina una línea visual elegante con arreglos pensados
+                        para sorprender. Mostramos el catálogo de forma simple para que el cliente
+                        explore, elija y nos escriba directamente por WhatsApp.
+                    </p>
+                    <p class="text-cacao/80 mb-8">
+                        Esta estructura funciona perfecto para GitHub Pages porque es una web
+                        estática, rápida y adaptable a celular, tablet y computadora.
+                    </p>
+                    <a href="https://wa.me/51915942702?text=Hola%20floreriaPiura%2C%20quiero%20consultar%20sus%20productos"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex bg-cacao text-white px-6 py-3 rounded-full font-semibold hover:bg-moka transition">
+                        Hablar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-[#f8f2eb] border-t border-arena">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-white rounded-[2rem] p-8 sm:p-10 shadow-soft grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="uppercase tracking-[0.2em] text-sm text-moka mb-3">Contacto</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-5">
+                        Haz tu pedido o consulta por WhatsApp
+                    </h2>
+                    <p class="text-cacao/80 mb-8">
+                        Comparte el nombre del ramo que te gustó y te ayudamos con disponibilidad,
+                        precio, personalización y entrega.
+                    </p>
+
+                    <div class="space-y-3 text-cacao/85">
+                        <p><strong>WhatsApp:</strong> +51 915 942 702</p>
+                        <p><strong>Ciudad:</strong> Piura, Perú</p>
+                        <p><strong>Horario:</strong> Lunes a sábado de 9:00 am a 8:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="bg-crema rounded-[1.5rem] p-6 sm:p-8">
+                    <h3 class="text-2xl font-bold mb-4">Mensaje rápido</h3>
+                    <p class="text-cacao/80 mb-6">
+                        Usa este botón para abrir el chat con un mensaje prellenado.
+                    </p>
+                    <a href="https://wa.me/51915942702?text=Hola%20floreriaPiura%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20ramos"
+                        target="_blank" rel="noopener noreferrer"
+                        class="w-full inline-flex justify-center bg-cacao text-white px-6 py-4 rounded-full font-semibold hover:bg-moka transition">
+                        Escribir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cacao text-white py-8">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-white/80">
+                © <span id="year"></span> floreriaPiura. Todos los derechos reservados.
+            </p>
+            <div class="flex gap-5 text-sm text-white/90">
+                <a href="#catalogo" class="hover:text-rosaClaro transition">Catálogo</a>
+                <a href="#nosotros" class="hover:text-rosaClaro transition">Nosotros</a>
+                <a href="#contacto" class="hover:text-rosaClaro transition">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/51915942702?text=Hola%20floreriaPiura%2C%20quiero%20hacer%20un%20pedido" target="_blank"
+        rel="noopener noreferrer" aria-label="WhatsApp"
+        class="fixed bottom-5 right-5 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-2xl hover:scale-105 transition">
+        <img src="assets/img/icono-wasap.svg" class="w-8 h-8" alt="WhatsApp">
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
